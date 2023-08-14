@@ -26,7 +26,9 @@
     <!--==================== HEADER ====================-->
     <header class="header scroll-header" id="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo">BanxxのCV</a>
+        <a href="#" class="nav__logo">
+          <img src="assets/img/ban03.png"/>
+        </a>
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
@@ -89,11 +91,10 @@
           <div class="home__content grid">
             <div class="home__social">
               <a
-                href="https://gitee.com/asoutherncat/"
+                href="https://gitee.com/banxx/projects"
                 target="_blank"
                 class="home__social-icon"
               >
-                <!-- <i class="uil uil-linkedin-alt"></i> -->
                 <svg
                   t="1674798484640"
                   viewBox="0 0 1024 1024"
@@ -108,8 +109,9 @@
                   ></path>
                 </svg>
               </a>
+
               <a
-                href="http://github.com"
+                href="https://github.com/banxxx/curriculumvitae"
                 target="_blank"
                 class="home__social-icon"
               >
@@ -160,6 +162,7 @@
                                 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
                   />
                   <image
+                    id="image"
                     class="home__blob-img"
                     x="40"
                     y="10"
@@ -205,7 +208,11 @@
           >My introduction</span
         >
         <div class="about__container container grid">
-          <img src="assets/img/about.png" alt="" class="about__img" />
+          <div class="a">
+            <div class="b"></div>
+              <span class="c"></span>
+            <div class="d"></div>
+          </div>
 
           <div class="about__data">
             <p class="about__description" i18n="about__description">
@@ -314,10 +321,20 @@
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">VUE</h3>
-                    <span class="skills__number">10%</span>
+                    <span class="skills__number">60%</span>
                   </div>
                   <div class="skills__bar">
                     <div class="skills__percentage skills__vue"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">VUE3</h3>
+                    <span class="skills__number">40%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__vue3"></div>
                   </div>
                 </div>
               </div>
@@ -522,7 +539,7 @@
                   animated interactions.
                 </p>
                 <a
-                  href="https://gitee.com/asoutherncat/"
+                  href="https://gitee.com/banxx/projects"
                   target="_blank"
                   class="button button--flex button--small portfolio__button"
                 >
@@ -553,7 +570,7 @@
                   animated interactions.
                 </p>
                 <a
-                  href="https://gitee.com/asoutherncat/"
+                  href="https://gitee.com/banxx/projects"
                   target="_blank"
                   class="button button--flex button--small portfolio__button"
                 >
@@ -584,7 +601,7 @@
                   animated interactions.
                 </p>
                 <a
-                  href="https://gitee.com/asoutherncat/"
+                  href="https://gitee.com/banxx/projects"
                   target="_blank"
                   class="button button--flex button--small portfolio__button"
                 >
@@ -623,7 +640,7 @@
               <div>
                 <h3 class="contact__title" i18n="tel">Call me</h3>
                 <span class="contact__subtitle" i18n="tel__number"
-                  >166********</span
+                  >15572750170</span
                 >
               </div>
             </div>
@@ -680,7 +697,7 @@
           </ul>
 
           <div class="footer__socials">
-            <a href="https://gitee.com/asoutherncat/" target="_blank">
+            <a href="https://gitee.com/banxx/projects" target="_blank">
               <svg class="icon footer__social" aria-hidden="true">
                 <use xlink:href="#icon-gitee"></use>
               </svg>
@@ -736,5 +753,27 @@
 
     <!-- translate JS -->
     <script src="assets/js/cn-en-translate.js"></script>
+    <script>
+      // 获取图片元素
+      var image = document.getElementById('image');
+  
+      // 监听鼠标移动事件
+      document.addEventListener('mousemove', function(e) {
+        // 计算图片需要移动的距离
+        var x = (e.clientX - window.innerWidth / 2) / 10;
+        var y = (e.clientY - window.innerHeight / 2) / 10;
+        x = Math.min(Math.max(x, -20), 20);
+        y = Math.min(Math.max(y, -20), 20);
+        // 设置图片的移动效果
+        image.style.transform = 'translate3d(' + x + 'px, ' + y + 'px, 0)';
+        image.style.transition = 'transform 0.5s ease-out';
+
+      // 设置图片的弹性反弹效果
+      setTimeout(function() {
+        image.style.transform = 'translate3d(0, 0, 0) scale(1, 1)';
+        image.style.transition = 'transform 0.5s ease-out';
+      }, 3000);
+      });
+    </script>
   </body>
 </html>

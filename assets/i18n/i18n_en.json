@@ -21,7 +21,6 @@
     "skills__years":"More than 2 years",
     "skills__title2":"Backend developer",
     "skills__years2":"More than 3 years",
-
     "qualification__title":"Qualification",
     "qualification__subtitle":"My personal journey",
     "education":"Education",
@@ -32,10 +31,8 @@
     "qualification2__subtitle":"Self-Study",
     "qualification3__title":"Web Development",
     "qualification3__subtitle":"Self-Study",
-
     "qualification4__title":"Software Enginner",
     "qualification4__subtitle":"ShenZhen",
-
     "portfolio__title":"Portfolio",
     "portfolio__subtitle":"Most recent works",
     "portfolio1__title":"Modern Website 1",

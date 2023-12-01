@@ -4,6 +4,7 @@
     "skills":"skills",
     "portfolio":"portfolio",
     "contact":"contact",
+    "blog":"Blog",
     "home__title":"Hi, I'm Banxx",
     "home__subtitle":"Backend developers",
     "home__description":"High level experience in web design and development knowledge,producing quality work.",
@@ -48,6 +49,6 @@
     "tel__number":"15572750170",
     "email":"E-mail",
     "email__address":"ban@banxx.cn",
-    "location":"Domicile ",
+    "location":"Domicile",
     "location__detail":"HuBei , CHN"
 }

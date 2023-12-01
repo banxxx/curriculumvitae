@@ -154,4 +154,7 @@ themeButton.addEventListener('click', () => {
     // We save the theme and the current icon that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
+    const imgSrc = document.getElementById("img_id")
+    getCurrentTheme() == "dark" ? imgSrc.src = 'assets/img/ban05.png' : imgSrc.src = 'assets/img/ban03.png'
+
 })
